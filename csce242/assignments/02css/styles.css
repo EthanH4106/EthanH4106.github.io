@@ -1,0 +1,42 @@
+/* Structural */
+body {
+    font-family: Times New Roman, serif;
+    background:url(images/dog_background.jpg);
+    background-size: cover;
+}
+
+#content {
+    background-color: rgb(207, 206, 206);
+    width: 90%;
+    padding: 1%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(181, 171, 172, 0.8);
+    box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.75);
+}
+
+#header, #footer {
+    padding: 1%;
+    background: rgb(67, 40, 0);
+    color: rgb(173, 171, 171);
+    border-radius: 10px;
+}
+
+#main {
+    img {
+        border-radius: 10px;
+        border: 2px solid rgb(67, 40, 0);
+    }
+
+    #table {
+    border: 10px;
+    border-color: rgb(67, 40, 0);
+    border-radius: 10px;
+    padding: 1%;
+    margin: 2%;
+    background-color: rgb(173, 171, 171, 0.5);
+}
+}
+/* Navigation */
+
+/* Typography */

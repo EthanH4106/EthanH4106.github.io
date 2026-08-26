@@ -1,0 +1,47 @@
+/* Structural */
+body {
+    font-family: Times New Roman, serif;
+    color: darkblue;
+    background:url(images/gt500.jpg);
+    background-size: 780px 820px;
+    background-repeat: no-repeat;
+    background-position: top, center;
+}
+
+#content {
+    background-color:rgb(211, 225, 238);
+    background-size: cover;
+    width: 90%;
+    padding: 1%;
+    margin: auto;
+    border-radius: 20px;
+    
+}
+
+#header {
+    text-align: center;
+    color: rgb(0, 45, 191);
+}
+
+#main {
+    color: rgb(0, 45, 191);
+    text-decoration: none;
+}
+
+#github-links a {
+    text-decoration: none;
+    color: rgb(0, 45, 191);
+}
+
+#assignments a {
+    text-decoration: none;
+    color: rgb(0, 45, 191);
+}
+
+#footer {
+    color: rgb(0, 45, 191);
+}
+
+/* Navigation */
+
+/* Typography */
