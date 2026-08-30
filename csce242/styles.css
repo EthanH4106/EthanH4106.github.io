@@ -1,11 +1,10 @@
 /* Structural */
 body {
-    font-family: Times New Roman, serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkblue;
     color: darkblue;
-    background:url(images/gt500.jpg);
-    background-size: 780px 820px;
-    background-repeat: no-repeat;
-    background-position: top, center;
+    background-size: cover;
+    margin: 0;
 }
 
 #content {
@@ -18,30 +17,180 @@ body {
     
 }
 
+/* Header */
+
 #header {
     text-align: center;
     color: rgb(0, 45, 191);
 }
 
+#header h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+#header p {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+/* Main */
+
 #main {
     color: rgb(0, 45, 191);
     text-decoration: none;
+    text-align: center;
+}
+
+.intro {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Github */
+
+#github-links {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
 #github-links a {
     text-decoration: none;
     color: rgb(0, 45, 191);
+    font-weight: bold;
 }
 
-#assignments a {
-    text-decoration: none;
-    color: rgb(0, 45, 191);
+github-links a:hover {
+    text-decoration: underline;
 }
+
+/* Section Headings */
+
+#assignments-section h2, #projects-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Assignments */
+
+.assignment-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.assignment-card {
+    flex: 1;
+    background-color: #d1dced;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.assignment-card h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.assignment-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.assignment-card p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom:0;
+}
+
+/* Projects */
+
+#projects-section {
+    margin-top: 40px;
+}
+
+.projects-container {
+    display: flex;
+    gap: 30px;
+}
+
+.project-card {
+    flex: 1;
+    background-color: #d1dced;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.project-card p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+/* Footer */
 
 #footer {
     color: rgb(0, 45, 191);
+    text-align: center;
+    margin-top: 30px;
 }
 
-/* Navigation */
-
 /* Typography */
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+    #content {
+        width: 90%;
+    }
+
+    #header h1 {
+        font-size: 32px;
+    }
+
+    .assignment-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .assignment-card {
+        width: 100%;
+    }
+
+    .assignment-card h3 {
+        font-size: 22px;
+    }
+
+    .assignment-card img {
+        height: 150px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
