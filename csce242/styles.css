@@ -87,6 +87,7 @@ github-links a:hover {
     background-color: #d1dced;
     padding: 20px;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .assignment-card h3 {
@@ -101,6 +102,7 @@ github-links a:hover {
     object-fit: cover;
     display: block;
     margin-bottom: 25px;
+    border-radius: 10px;
 }
 
 .assignment-card p {
@@ -125,6 +127,7 @@ github-links a:hover {
     background-color: #d1dced;
     padding: 20px;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .project-card h3 {
@@ -134,11 +137,13 @@ github-links a:hover {
 }
 
 .project-card img {
-    width: 100%;
+    margin: 0 auto;
+    width: 50%;
     height: 150px;
     object-fit: cover;
     display: block;
     margin-bottom: 25px;
+    border-radius: 10px;
 }
 
 .project-card p {
