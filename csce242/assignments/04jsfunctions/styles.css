@@ -1,0 +1,161 @@
+/* Structure */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color:aliceblue;
+    color:cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 16px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header h3 {
+    margin: 22px 0;
+    font-size: 16px;
+}
+
+/* Columns */
+.columns {
+    width: 94%;
+    margin: 22px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12%;
+}
+
+.column {
+    height: 213px;
+    background-color:azure;
+    border: 1px solid cornflowerblue;
+    position: relative;
+    padding: 25px;
+}
+
+.column h3 {
+    margin: 3px 0 0;
+    text-align: center;
+    font-size: 19px;
+}
+
+/* Speech */
+#speech-bubble {
+    display: none;
+    position: relative;
+    width: 46px;
+    height: 46px;
+    margin: 15px auto 0;
+    background-color: white;
+    border: 2px solid #222;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 16px;
+    color: #222;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Speech Bubble Tail */
+#speech-bubble::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-right: 2px solid #222;
+    border-bottom: 2px solid #222;
+    transform: rotate(45deg);
+    bottom: -11px;
+    right: -1px;
+}
+
+/* Beverage */
+.beverage-content {
+    margin-top: 18px;
+}
+
+.beverage-content label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+#beverage {
+    width: 102px;
+    height: 20px;
+    font-size: 13px;
+}
+
+#beverage-output {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Sticker */
+#sticker-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 25px auto 0;
+}
+
+#sun {
+    width: 100px;
+    height: 100px;
+    display: block;
+    cursor: pointer;
+}
+
+#sticker {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: cornflowerblue;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .columns {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .column {
+        width: 100%;
+        height: 231px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header h2 {
+        font-size: 22px;
+    }
+
+    footer {
+        margin-bottom: 20px;
+    }
+}
