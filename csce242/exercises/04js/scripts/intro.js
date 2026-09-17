@@ -20,54 +20,74 @@ document.getElementById("btn-bounce").onclick = (e) => {
 document.getElementById("txt-num-days").onkeyup = (e) => {
     const numDays = parseInt(e.target.value);
     const pMessage = document.getElementById("p-plant-msg");
-    pMessage.innerHTML =numDays;
     const plantImage = document.getElementById("img-plant");
     plantImage.classList.remove("hidden");
-
-    if (numDays <= 2){
-        pMessage.innerHTML = `Let your plant rest it's only been ${numDays} day(s)`;
-        plantImage.src="https://www.dummyimage.com/150x150/28f211/fff&text=Happy+Plant";
+    
+    if(numDays <= 2){
+        pMessage.innerHTML = `Let your plant rest it's only been ${numDays} day(s).`;
+        plantImage.src="https://dummyimage.com/150x150/556B2F/fff&text=Happy+Plant";
     } else if(numDays <= 5){
-        pMessage.innerHTML = `Time to water it's been ${numDays} day(s)`;
-        plantImage.src="https://www.dummyimage.com/150x150/d9d020/fff&text=Wilting+Plant";
-    } else if(numDays <= 7){
-        pMessage.innerHTML = `Oh no your plant is wilting it's been ${numDays} day(s)`;
-        plantImage.src="https://www.dummyimage.com/150x150/b07f1e/fff&text=Very+Wilted+Plant";
+        pMessage.innerHTML = `Time to water it's been ${numDays} days.`;
+        plantImage.src="https://dummyimage.com/150x150/BDB76B/fff&text=Thirsty";
+    } else if(numDays <= 7) {
+        pMessage.innerHTML = `Oh no your plant is wilting it's been ${numDays} days.`;
     } else {
-        pMessage.innerHTML = "Your plant is a goner";
-        plantImage.src="https://www.dummyimage.com/150x150/000000/fff&text=Very+Dead+Plant";
-    } 
+        pMessage.innerHTML = "Your plant is a gooner";
+    }
 }
 
-//Counting
+//counting
 let countInterval;
 let count = 0;
 const pCount = document.getElementById("p-count");
-const btnStart =document.getElementById("btn-start");
+const btnStart = document.getElementById("btn-start");
+const btnPause = document.getElementById("btn-pause");
+const btnStop = document.getElementById("btn-stop");
+btnPause.disabled = true;
+btnStop.disabled = true;
 
-btnStart.onClick = () => 
-document.getElementById("btn-start").onclick = () => {
+btnStart.onclick = () =>
+{
     countInterval = setInterval(()=>{
-        count++;
         pCount.innerHTML = ++count;
     },500);
-}
-btnPause.onClick = () =>
-document.getElementById("btn-pause").onclick = () => {
+    btnStart.disabled = true;
+    btnPause.disabled = false;
+    btnStop.disabled = false;
+};
+
+btnPause.onclick = () =>
+{
     clearInterval(countInterval);
-}
-btnStop.onClick = () => 
-document.getElementById("btn-stop").onclick = () => {
-    count = 0;
+    btnStart.disabled = false;
+    btnPause.disabled = true;
+    btnStop.disabled = true;
+};
+
+btnStop.onclick = () =>
+{
+    count=0;
     pCount.innerHTML = "";
     clearInterval(countInterval);
-}
+    btnStart.disabled = false;
+    btnPause.disabled = true;
+    btnStop.disabled = true;
+};
 
 //date display
-setInterval(() => {
+setInterval(()=>{
     const pDisplay = document.getElementById("date-display");
-
     const today = new Date();
-    const second = today.getSeconds();
-    pDisplay.innerHTML = seconds;
+    const month = today.getMonth() + 1;
+    const day = today.getDate();
+    const year = today.getFullYear();
+    const seconds = today.getSeconds();
+    const minutes = today.getMinutes();
+    const hours = today.getHours();
+    pDisplay.innerHTML = `${hours}:${minutes}:${seconds} ${month}/${day}/${year}`;
 }, 1000);
+
+//toggle the navigation
+document.querySelector("#toggle-nav").onClick = () => {
+    document.querySelector("#main-nav ul").classList.toggle("hide-small");
+}
