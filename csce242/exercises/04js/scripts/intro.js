@@ -88,6 +88,19 @@ setInterval(()=>{
 }, 1000);
 
 //toggle the navigation
-document.querySelector("#toggle-nav").onClick = () => {
+document.querySelector("#toggle-nav").onclick = () => {
     document.querySelector("#main-nav ul").classList.toggle("hide-small");
+}
+
+//record the users donation and fill up the thermometer appropriately
+const GOAL = 10000;
+document.getElementById("goal").innerHTML = GOAL;
+
+document.getElementById("btn-donation").onclick = () => {
+    const userDonation = parseInt(document.getElementById("txt-donation").value);
+    const donationP = document.getElementById("donation-message");
+    percent = userDonation / GOAL * 100;
+    
+    donationP.innerHTML = `You are ${percent.toFixed(1)}% to your goal`;
+    document.querySelector(":root").style.setProperty("--donation", percent + "%");
 }
