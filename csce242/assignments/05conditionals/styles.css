@@ -1,0 +1,129 @@
+/* General */
+body {
+    margin: 0;
+    background-color: #f1f5f9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e293b;
+}
+
+header {
+    text-align: center;
+    padding: 15px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+h2 {
+    color: #0f172a;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+main {
+    width: 90%;
+    max-width: 820px;
+    margin: 20px auto;
+}
+
+/* Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+/* Adding the bar between the menu items */
+nav li:not(:last-child)::after {
+    content: " |";
+    margin-left: 10px;
+}
+
+nav li:hover {
+    color: #14b8a6;
+}
+
+/* Exercises */
+.exercise {
+    background-color: white;
+    border: 1px solid #cbd5e1;
+    padding: 30px;
+    text-align: center;
+}
+
+.exercise h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.exercise p {
+    font-size: 17px;
+}
+
+/* Input */
+input {
+    width: 210px;
+    height: 30px;
+    margin: 10px auto;
+    display: block;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Mobile menu arrow */
+#menu-toggle {
+    display: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        padding: 5px 10px;
+    }
+
+    /* Remove pipes on small screens */
+    nav li:not(:last-child)::after {
+        content: "";
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .exercise {
+        padding: 20px;
+    }
+}

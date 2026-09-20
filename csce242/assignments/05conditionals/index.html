@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 8 - Conditionals</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <h1>Assignment 8</h1>
+                <h2>If Statements</h2>
+                <nav>
+                    <div id="menu-toggle">▼</div>
+                    <ul id="menu">
+                        <li id="exercise1Link">Exercise 1</li>
+                        <li id="exercise2Link">Exercise 2</li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <!-- Exercise 1-->
+                 <section id="exercise1" class="exercise">
+                    <h3>Missing Class Point Deductions</h3>
+                    <p>How many days do you intend to miss class?</p>
+                    <input type="number" id="missed-days" min="0">
+                    <p id="deduction-result"></p>
+                    <p id="attendance-message"></p>
+                 </section>
+                 <section id="exercise2" class="exercise" style="display: none;">
+                    <h3>End of Semester Counter</h3>
+                    <p id="days-left"></p>
+                    <p id="semester-message"></p>
+                 </section>
+            </main>
+            <footer>
+                <p>&copy; Ethan Helms</p>
+            </footer>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
