@@ -1,0 +1,298 @@
+/* General */
+body {
+    background-color: #111111;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Navbar */
+header {
+    padding: 35px 15px 20px;
+}
+
+.navbar {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    background-color: #202020;
+    border-radius: 20px;
+    padding: 6px 15px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    margin: 0 5px;
+    color: #dddddd;
+}
+
+.nav-links a.active {
+    color: #008fd3;
+}
+
+.nav-links:hover {
+    transform: translateY(-3px);
+}
+
+/* Performance Introduction */
+#performance-intro {
+    text-align: center;
+    padding: 5px 0 15px;
+}
+
+#performance-intro h2 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+#performance-intro p {
+    font-size: 17px;
+    margin: 15px 0;
+}
+
+/* Selected Car Stats */
+#car-stats {
+    border-top: 3px solid #353535;
+    border-bottom: 3px solid #353535;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#car-stats h3 {
+    font-size: 17px;
+    font-weight: normal;
+    margin: 0 0 25px;
+}
+
+#car-stats strong {
+    font-weight: bold;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stats-grid:last-child {
+    margin-bottom: 0;
+}
+
+.stat h4 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 15px;
+}
+
+.stat p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Performance Stats */
+.performance-stats {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Comparison Section */
+#comparison {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#comparison h2 {
+    font-size: 26px;
+    margin: 0 0 35px;
+}
+
+.comparison-cards {
+    display: grid;
+    grid-template-columns: 1fr 60px 1fr;
+    align-items: center;
+    gap: 15px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.comparison-card {
+    background-color: #202020;
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.comparison-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.comparison-card h3 {
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 8px;
+    border-bottom: 1px solid #333333;
+}
+
+.comparison-card ul {
+    font-size: 13px;
+    color: #cccccc;
+    padding: 8px 10px 12px 25px;
+    margin: 0;
+}
+
+.versus {
+    font-size: 28px;
+    color: #eeeeee;
+}
+
+/* Winner Section */
+#winner {
+    text-align: center;
+    padding: 20px 0 35px;
+}
+
+#winner h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+#winner p {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px;
+}
+
+.footer-links {
+    background-color: #202020;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.footer-links:hover {
+    transform: translateY(-3px);
+}
+
+.footer-links a {
+    font-size: 15px;
+    margin: 0 10px;
+    color: #bbbbbb;
+}
+
+.footer-links a.active {
+    color: #008fd3;
+}
+
+/* Responsive Layout */
+@media (max-width: 700px) {
+    #content {
+        padding: 15px;
+    }
+
+    header {
+        padding-top: 25px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+
+    #performance-intro h2 {
+        font-size: 22px;
+    }
+
+    #performance-intro p {
+        font-size: 14px;
+    }
+
+    .stats-grid {
+        gap: 15px 5px;
+    }
+
+    .stat h4, .stat p {
+        font-size: 12px;
+    }
+
+    #car-stats h3 {
+        font-size: 13px;
+    }
+
+    .comparison-cards {
+        grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    .comparison-card {
+        border-radius: 12px;
+    }
+
+    .comparison-card img {
+        height: 100px;
+    }
+
+    .comparison-card h3 {
+        font-size: 10px;
+        padding: 8px 4px;
+    }
+
+    .comparison-card ul {
+        font-size: 10px;
+        padding: 8px 4px 10px 18px;
+    }
+
+    .versus {
+        font-size: 20px;
+    }
+
+    #winner h2 {
+        font-size: 18px;
+    }
+
+    #winner p {
+        font-size: 18px;
+    }
+}
