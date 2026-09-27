@@ -1,0 +1,291 @@
+/* General */
+body {
+    background-color: #111111;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Navbar */
+header {
+    padding: 35px 15px 20px;
+}
+
+.navbar {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    background-color: #202020;
+    border-radius: 20px;
+    padding: 6px 15px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    margin: 0 5px;
+    color: #dddddd;
+}
+
+.nav-links a.active {
+    color: #008fd3;
+}
+
+.nav-links:hover {
+    transform: translateY(-3px);
+}
+
+/* Garage Banner */
+#garage-banner {
+    background: repeating-linear-gradient(
+        to bottom,
+        #292929,
+        #292929 7px,
+        #222222 7px,
+        #222222 14px
+    );
+    border-radius: 25px 25px 0 0;
+    text-align: center;
+    padding: 15px;
+    margin: 0 40px 25px;
+    border-bottom: 2px solid #444444;
+}
+
+#garage-banner h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 15px;
+}
+
+.banner-text {
+    background-color: #353535;
+    opacity: .85;
+    border-radius: 30px;
+    max-width: 500px;
+    margin: auto;
+    padding: 15px 20px;
+}
+
+.banner-text p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Filters */
+#garage-controls {
+    margin: 25px 0 45px;
+}
+
+.filter-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.filter-links {
+    line-height: 2;
+    font-size: 15px;
+}
+
+.filter-links a {
+    color: #dddddd;
+    text-decoration: none;
+}
+
+.filter-links a:active {
+    color: #29b6e6;
+}
+
+.filter-links a:hover {
+    color: #29b6e6;
+}
+
+.sort-section {
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.sort-section label {
+    font-weight: bold;
+}
+
+.sort-section select {
+    background: transparent;
+    color: #dddddd;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.sort-section select option {
+    background-color: #222222;
+}
+
+/* Search */
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.search-section input {
+    background-color: #222222;
+    color: white;
+    border: 1px solid #444444;
+    border-radius: 25px;
+    padding: 12px 20px;
+    width: 250px;
+    font-size: 15px;
+    display: none;
+}
+
+.search-section button {
+    background-color: #303030;
+    color: #eeeeee;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.search-section button:hover {
+    background-color: #414141;
+}
+
+/* Vehicle Grid */
+#garage-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.car-card {
+    background-color: #202020;
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.car-card p {
+    font-size: 13px;
+    color: #bbbbbb;
+    margin: 0;
+    padding: 12px 5px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px;
+    margin: auto;
+}
+
+.footer-links {
+    background-color: #202020;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.footer-links:hover {
+    transform: translateY(-3px);
+}
+
+.footer-links a {
+    font-size: 15px;
+    margin: 0 20px;
+    color: #bbbbbb;
+}
+
+.footer-links a.active {
+    color: #008fd3;
+}
+
+/* Responsive Layout */
+@media (max-width: 700px) {
+    #content {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 10px;
+        padding: 8px 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    #garage-banner {
+        margin: 0 10px 25px;
+    }
+
+    #garage-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .car-card {
+        border-radius: 12px;
+    }
+
+    .car-card img {
+        height: 90px;
+    }
+
+    .car-card p {
+        font-size: 10px;
+        padding: 8px 3px;
+    }
+
+    footer {
+        padding-bottom: 10px;
+        margin: auto;
+    }
+}

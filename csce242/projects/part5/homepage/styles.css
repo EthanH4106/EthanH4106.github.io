@@ -44,7 +44,7 @@ header {
     align-items: center;
     background-color: #202020;
     border-radius: 20px;
-    padding: 6px 10px;
+    padding: 6px 15px;
 }
 
 .nav-links a {
@@ -63,9 +63,9 @@ header {
 
 /* Hero */
 .hero {
-    width: 90%;
+    width: 100%;
     height: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 15px auto 0;
     position: relative;
     overflow: hidden;
@@ -123,13 +123,15 @@ section h2 {
     width: 90%;
     max-width: 900px;
     margin: 30px auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .vehicle-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 45px;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 15px;
 }
 
 .vehicle-card {
@@ -137,7 +139,7 @@ section h2 {
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.2s;
-    width: 100%;
+    width: 400px;
 }
 
 .vehicle-card:hover {
@@ -235,7 +237,7 @@ footer {
 .footer-links {
     background-color: #202020;
     border-radius: 20px;
-    padding: 6px 10px;
+    padding: 10px 30px;
 }
 
 .footer-links:hover {
@@ -243,8 +245,8 @@ footer {
 }
 
 .footer-links a {
-    font-size: 12px;
-    margin: 0 5px;
+    font-size: 15px;
+    margin: 0 20px;
     color: #bbbbbb;
 }
 
@@ -302,8 +304,13 @@ footer {
         gap: 12px;
     }
 
+    .vehicle-card {
+        width: 100%;
+    }
+
     .vehicle-card img {
         height: 90px;
+        width: 100%;
     }
 
     .vehicle-info {
