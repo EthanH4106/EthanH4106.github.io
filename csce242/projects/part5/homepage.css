@@ -75,7 +75,7 @@ header {
 .hero img {
     width: 100%;
     height: 100%;
-    height: 360px;
+    height: 400px;
     object-fit: cover;
     display: block;
     filter: brightness(65%);
@@ -148,7 +148,7 @@ section h2 {
 
 .vehicle-card img {
     width: 100%;
-    height: 125px;
+    height: 250px;
     object-fit: cover;
     display: block;
     filter: brightness(85%);
@@ -245,7 +245,7 @@ footer {
 }
 
 .footer-links a {
-    font-size: 15px;
+    font-size: 18px;
     margin: 0 20px;
     color: #bbbbbb;
 }
@@ -352,7 +352,7 @@ footer {
         font-size: 8px;
     }
 
-    footer {
-        padding-bottom: 10px;
+    .footer-links a {
+        font-size: 15px;
     }
 }

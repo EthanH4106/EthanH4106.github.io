@@ -76,6 +76,30 @@ header {
 }
 
 /* Selected Car Stats */
+.your-car-link {
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    background-color: #303030;
+    border-radius: 10px;
+}
+
+.your-car-link a:hover {
+    color: #008fd3;
+}
+
+.opponent-car-link {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    background-color: #303030;
+    border-radius: 10px;
+}
+
+.opponent-car-link a:hover {
+    color: #008fd3;
+}
+
 #car-stats {
     border-top: 3px solid #353535;
     border-bottom: 3px solid #353535;
@@ -209,7 +233,7 @@ footer {
 }
 
 .footer-links a {
-    font-size: 15px;
+    font-size: 18px;
     margin: 0 10px;
     color: #bbbbbb;
 }
@@ -294,5 +318,9 @@ footer {
 
     #winner p {
         font-size: 18px;
+    }
+
+    .footer-links a {
+        font-size: 15px;
     }
 }
