@@ -12,7 +12,7 @@ setInterval(function() {
     slides[currentSlide].style.display = "none";
 
     // Move to the next slide
-    currentSlide++;
+    currentSlide++; 
 
     // If we reach the end, go back to the first slide
     if (currentSlide >= slides.length) {
