@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 9 Javascript Classes</title>
+
+    <!-- W3Schools CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div id="content">
+
+            <h1>Vacations</h1>
+
+            <h2>Vacation Experiences</h2>
+
+            <!-- Vacation cards are added here with JavaScript -->
+            <div id="vacation-list"></div>
+
+            <!-- Modal -->
+            <div id="vacation-modal" class="w3-modal">
+
+                <div class="w3-modal-content">
+
+                    <span id="close-modal" class="w3-button w3-display-topright">&times;</span>
+
+                    <div class="modal-content">
+
+                        <!-- Map -->
+                        <div class="map-container">
+
+                            <iframe id="vacation-map"></iframe>
+
+                        </div>
+
+                        <!-- Vacation information -->
+                        <div class="vacation-info">
+
+                            <h2 id="modal-title"></h2>
+
+                            <p>
+                                <strong>Type:</strong>
+                                <span id="modal-type"></span>
+                            </p>
+
+                            <p>
+                                <strong>Description:</strong>
+                                <span id="modal-description"></span>
+                            </p>
+
+                            <p>
+                                <strong>Things To Do:</strong>
+                                <span id="modal-things"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Ethan Helms</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
