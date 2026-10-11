@@ -172,7 +172,7 @@ header {
     flex-direction: column;
     gap: 10px;
 }
-
+ 
 #contact-form input, #contact-form textarea {
     width: 100%;
     box-sizing: border-box;

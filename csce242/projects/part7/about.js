@@ -12,5 +12,5 @@ async function showAboutCars() {
         console.error("Could not display About page cars:", error);
     }
 }
-
+ 
 showAboutCars();
