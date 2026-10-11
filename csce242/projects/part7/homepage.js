@@ -23,3 +23,14 @@ setInterval(function() {
     slides[currentSlide].style.display = "block";
 
 }, 5000);
+
+async function showFeaturedCars() {
+    try {
+        const randomCars = await getRandomCars(6);
+        displayCars(randomCars, "featured-cars");
+    } catch (error) {
+        console.error("Could not display featured cars:", error);
+    }
+}
+
+showFeaturedCars();
