@@ -338,6 +338,10 @@ footer {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    #drag-racing {
+        padding: 12px;
+    }
+
     .about {
         width: 88%;
     }
