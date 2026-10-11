@@ -149,7 +149,7 @@
         "make": "Ford",
         "model": "F-150",
         "category": "truck",
-        "image": "images/f150.jpg",
+        "image": "images/f-150.jpg",
         "description": "The most driven American truck."
     },
     {
@@ -176,7 +176,7 @@
         "make": "Chevrolet",
         "model": "Corvette",
         "category": "muscle",
-        "image": "images/corvette.jpg",
+        "image": "images/corvette-img.jpg",
         "description": "A high-performance muscle car with a powerful V8 engine."
     },
     {
@@ -185,7 +185,7 @@
         "make": "lexus",
         "model": "IS350",
         "category": "sport",
-        "image": "images/lexus-is350.webp",
+        "image": "images/is350.webp",
         "description": "A sports car with a naturally aspirated V6 engine."
     },
     {
