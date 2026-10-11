@@ -122,7 +122,7 @@
         "make": "Toyota",
         "model": "GR Supra",
         "category": "sport",
-        "image": "images/supra.jpg",
+        "image": "images/2026-toyota-gr-supra.webp",
         "description": "A high-performance sports car with a turbocharged inline-six engine."
     },
     {
@@ -142,5 +142,86 @@
         "category": "super",
         "image": "images/lambo-hero.jpg",
         "description": "A high-performance supercar with a naturally aspirated V12 engine."
+    },
+    {
+        "_id": 17,
+        "year": 2026,
+        "make": "Ford",
+        "model": "F-150",
+        "category": "truck",
+        "image": "images/f150.jpg",
+        "description": "The most driven American truck."
+    },
+    {
+        "_id": 18,
+        "year": 2026,
+        "make": "toyota",
+        "model": "tacoma",
+        "category": "truck",
+        "image": "images/tacoma.jpg",
+        "description": "A reliable truck that is easily modified."
+    },
+    {
+        "_id": 19,
+        "year": 2026,
+        "make": "Chevrolet",
+        "model": "Silverado 1500",
+        "category": "truck",
+        "image": "images/silverado.jpg",
+        "description": "An American truck that is offered with a wide selection of engines."
+    },
+    {
+        "_id": 20,
+        "year": 2017,
+        "make": "Chevrolet",
+        "model": "Corvette",
+        "category": "muscle",
+        "image": "images/corvette.jpg",
+        "description": "A high-performance muscle car with a powerful V8 engine."
+    },
+    {
+        "_id": 21,
+        "year": 2026,
+        "make": "lexus",
+        "model": "IS350",
+        "category": "sport",
+        "image": "images/lexus-is350.webp",
+        "description": "A sports car with a naturally aspirated V6 engine."
+    },
+    {
+        "_id": 22,
+        "year": 2026,
+        "make": "Acura",
+        "model": "TLX Type S",
+        "category": "sport",
+        "image": "images/acura-tlx.webp",
+        "description": "A sports car with a naturally aspirated V6 engine."
+    },
+    {
+        "_id": 23,
+        "year": 2026,
+        "make": "Ferrari",
+        "model": "488 Pista",
+        "category": "super",
+        "image": "images/488pista.webp",
+        "description": "A supercar with a V12 engine."
+    },
+    {
+        "_id": 24,
+        "year": 2024,
+        "make": "Koenigsegg",
+        "model": "Jesko",
+        "category": "super",
+        "image": "images/jesko.jpg",
+        "description": "A supercar with a V8 engine."
+    },
+    {
+        "_id": 25,
+        "year": 2022,
+        "make": "Bughatti",
+        "model": "Chiron",
+        "category": "super",
+        "image": "images/chiron.webp",
+        "description": "A supercar with a W16 engine."
     }
 ]
