@@ -1,0 +1,146 @@
+[
+    {
+        "_id": 1,
+        "year": 2026,
+        "make": "Dodge",
+        "model": "Durango Hellcat",
+        "category": "suv",
+        "image": "images/dodge-durango-hellcat.webp",
+        "description": "A high-performance SUV with a supercharged V8."
+    },
+    {
+        "_id": 2,
+        "year": 2026,
+        "make": "Mercedes-Benz",
+        "model": "AMG GLE 63 S",
+        "category": "suv",
+        "image": "images/mercedes.jpg",
+        "description": "A luxurious SUV with a powerful V8 engine."
+    },
+    {
+        "_id": 3,
+        "year": 2026,
+        "make": "BMW",
+        "model": "X5 M Competition",
+        "category": "suv",
+        "image": "images/bmw.webp",
+        "description": "A sporty SUV with a twin-turbo V8 engine."
+    },
+    {
+        "_id": 4,
+        "year": 2025,
+        "make": "Porsche",
+        "model": "Cayenne Turbo GT",
+        "category": "suv",
+        "image": "images/porsche.avif",
+        "description": "A high-performance SUV with a turbocharged V8."
+    },
+    {
+        "_id": 5,
+        "year": 2026,
+        "make": "Ford",
+        "model": "Explorer ST",
+        "category": "suv",
+        "image": "images/explorer.avif",
+        "description": "A sporty SUV with a twin-turbo V6 engine."
+    },
+    {
+        "_id": 6,
+        "year": 2026,
+        "make": "Mazda",
+        "model": "CX-50 Turbo",
+        "category": "suv",
+        "image": "images/mazda.webp",
+        "description": "A stylish SUV with a turbocharged four-cylinder engine."
+    },
+    {
+        "_id": 7,
+        "year": 2026,
+        "make": "Volkswagen",
+        "model": "Tiguan R-Line",
+        "category": "suv",
+        "image": "images/volkswagen.jpg",
+        "description": "A sporty SUV with a turbocharged four-cylinder engine."
+    },
+    {
+        "_id": 8,
+        "year": 2022,
+        "make": "Chevrolet",
+        "model": "Camaro",
+        "category": "muscle",
+        "image": "images/camaro-left.jpg",
+        "description": "A high-performance muscle car with a V8 engine."
+    },
+    {
+        "_id": 9,
+        "year": 2022,
+        "make": "Dodge",
+        "model": "Challenger SRT Hellcat",
+        "category": "muscle",
+        "image": "images/challenger-middle.webp",
+        "description": "A high-performance muscle car with a supercharged V8."
+    },
+    {
+        "_id": 10,
+        "year": 2022,
+        "make": "Ford",
+        "model": "Mustang GT500",
+        "category": "muscle",
+        "image": "images/mustang.webp",
+        "description": "A powerful muscle car with a supercharged V8."
+    },
+    {
+        "_id": 11,
+        "year": 2021,
+        "make": "Jeep",
+        "model": "Cherokee Trailhawk",
+        "category": "suv",
+        "image": "images/jeep-trackhawk.jpg",
+        "description": "A rugged SUV with off-road capabilities."
+    },
+    {
+        "_id": 12,
+        "year": 2026,
+        "make": "Cadillac",
+        "model": "Escalade V",
+        "category": "suv",
+        "image": "images/cadillac.jpg",
+        "description": "A luxury SUV with a powerful V8 engine."
+    },
+    {
+        "_id": 13,
+        "year": 2026,
+        "make": "Nissan",
+        "model": "370Z Nismo",
+        "category": "sport",
+        "image": "images/370z.jpg",
+        "description": "A sporty coupe with a naturally aspirated V6 engine."
+    },
+    {
+        "_id": 14,
+        "year": 2026,
+        "make": "Toyota",
+        "model": "GR Supra",
+        "category": "sport",
+        "image": "images/supra.jpg",
+        "description": "A high-performance sports car with a turbocharged inline-six engine."
+    },
+    {
+        "_id": 15,
+        "year": 2022,
+        "make": "Ford",
+        "model": "F-250",
+        "category": "truck",
+        "image": "images/f250-img.webp",
+        "description": "A powerful truck with a diesel engine."
+    },
+    {
+        "_id": 16,
+        "year": 2022,
+        "make": "Lamborghini",
+        "model": "Aventador SVJ",
+        "category": "super",
+        "image": "images/lambo-hero.jpg",
+        "description": "A high-performance supercar with a naturally aspirated V12 engine."
+    }
+]

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,10 +24,21 @@
             </header>
             <main>
                 <h2 id="page-title">Contact Us</h2>
-                <div class="projects">
-                    
-                </div>
+                <form id="contact-form" action="" method="POST">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" required>
+                    </p>
+                    <p><textarea name="message" required></textarea></p>
+                    <p><button type="submit">Submit</button></p>
+                    <p id="result"></p>
+                </form>
             </main>
         </div>
+        <script src="scripts/contact.js"></script>
     </body>
 </html>
