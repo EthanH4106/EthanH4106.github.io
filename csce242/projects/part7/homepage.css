@@ -167,6 +167,38 @@ section h2 {
     padding: 0 10px 10px;
 }
 
+/* iframe video container */
+#drag-racing {
+    max-width: 1100px;
+    margin: 40px auto;
+    margin-bottom: 40px;
+    padding: 20px;
+    color: #ffffff;
+}
+
+#drag-racing h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#drag-racing p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 .about {
     width: 90%;
     max-width: 900px;
