@@ -3,6 +3,7 @@
     <head>
         <title>Project 4 - Homepage HTML and CSS</title>
         <link rel="stylesheet" href="homepage.css">
+        <meta name="referrer" contents="strict-origin-when-cross-origin">
     </head>
     <body>
         <div id="content">
@@ -35,6 +36,15 @@
                 <section id="featured-section">
                     <h2>Featured Cars</h2>
                     <div id="featured-cars" class="car-grid"></div>
+                </section>
+
+                <!-- Embedded video section --> 
+                <section id="drag-racing"> 
+                    <h2>Drag Racing</h2> 
+                    <p>Watch this drag racing compilation!</p> 
+                    <div class="video-container"> 
+                        <iframe src="https://www.youtube.com/embed/kPstWl2sa-s" title="Drag Racing Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                    </div>
                 </section>
 
                 <section class="about">
