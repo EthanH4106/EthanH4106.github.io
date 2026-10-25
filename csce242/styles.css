@@ -146,6 +146,24 @@ github-links a:hover {
     border-radius: 10px;
 }
 
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.project-links a {
+    color: #006da8;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.project-links a:hover {
+    color: #004b75;
+}
+
 .project-card p {
     font-size: 18px;
     line-height: 1.4;
